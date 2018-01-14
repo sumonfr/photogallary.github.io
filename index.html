@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link href="CSS/style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <video autoplay loop class="video-back" muted plays-inline>
+            <source src="video/galary.mp4" type="video/mp4">
+        </video>
+    <div class="login">
+        <img src="pic/user.png" class="user">
+        <h2>Log In Here</h2>
+        <form>
+            <p>Username</p>
+            <input type="text" name="user" placeholder="Enter You Unsername">
+
+            <p>Password</p>
+            <input type="password" name="pass" placeholder="">
+            <input type="button" onclick="check(this.form)" value="Sign In">
+            <a href="#">Forget Password</a>
+        </form>
+    </div>
+
+    <script language="javascript">
+        function check(form) {
+            if (form.user.value == "sectionb" && form.pass.value == "724") {
+                window.open('header.html')
+            } else {
+                alert("Try Again")
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
